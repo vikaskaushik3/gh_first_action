@@ -1,0 +1,10 @@
+name: First Workflow          # workflow name
+on: workflow_dispatch         # event
+jobs:                         # list of jobs
+  first_job:                  # first job name
+    runs-on: ubuntu-latest    # list of runners
+    steps:
+      - name: Print start
+        run: echo "Job started!"
+      - name: Print complete
+        run: echo "Job Completed!"
